@@ -1,0 +1,22 @@
+[
+  {
+    "id" : 1,
+    "i18nName" : {"ru_RU":"ЮЗАО","en_EN":"UZAO"}
+  },
+  {
+    "id" : 10,
+    "i18nName" : {"ru_RU":"ЦАО","en_EN":"CAO"}
+  },
+  {
+    "id" : 11,
+    "i18nName" : {"ru_RU":"САО","en_EN":"SAO"}
+  },
+  {
+    "id" : 12,
+    "i18nName" : {"ru_RU":"ЗАО","en_EN":"ZAO"}
+  },
+  {
+    "id" : 13,
+    "i18nName" : {"ru_RU":"ВАО","en_EN":"VAO"}
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id" : 1,
+    "name" : "videoserver 1",
+    "desc" : "videoserver description 1",
+    "host" : "192.168.1.1",
+    "port" : 5500,
+    "status": "ACTIVE"
+  },
+  {
+    "id" : 2,
+    "name" : "videoserver 2",
+    "desc" : "videoserver description 2",
+    "host" : "192.168.1.1",
+    "port" : 5500,
+    "status": "ACTIVE"
+  },
+  {
+    "id" : 3,
+    "name" : "videoserver 3",
+    "desc" : "videoserver description 3",
+    "host" : "192.168.1.1",
+    "port" : 5500,
+    "status": "ACTIVE"
+  },
+  {
+    "id" : 4,
+    "name" : "videoserver 4",
+    "desc" : "videoserver description 4",
+    "host" : "192.168.1.1",
+    "port" : 5500,
+    "status": "ACTIVE"
+  },
+  {
+    "id" : 5,
+    "name" : "videoserver 5",
+    "desc" : "videoserver description 5",
+    "host" : "192.168.1.2",
+    "port" : 5501,
+    "status": "ACTIVE"
+  },
+  {
+    "id" : 6,
+    "name" : "videoserver 6",
+    "desc" : "videoserver description 6",
+    "host" : "192.168.1.6",
+    "port" : 5506,
+    "status": "ACTIVE"
+  },
+  {
+    "id" : 7,
+    "name" : "videoserver 7",
+    "desc" : "videoserver description 7",
+    "host" : "192.168.1.7",
+    "port" : 5507,
+    "status": "ACTIVE"
+  },
+  {
+    "id" : 8,
+    "name" : "videoserver 8",
+    "desc" : "videoserver description 8",
+    "host" : "192.168.1.8",
+    "port" : 5508,
+    "status": "ACTIVE"
+  },
+  {
+    "id" : 9,
+    "name" : "videoserver 9",
+    "desc" : "videoserver description 9",
+    "host" : "192.168.1.9",
+    "port" : 5509,
+    "status": "ACTIVE"
+  }
+]

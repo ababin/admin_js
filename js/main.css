@@ -1,0 +1,225 @@
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox specific link and font settings <<<------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+
+div.modal-dialog{
+	display: table;
+}
+
+
+.wall {
+	display : none;
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+	background-color: black;
+	
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* IE 5.5+*/
+	-moz-opacity: 0.7; /* Mozilla 1.6 и ниже */
+	-khtml-opacity: 0.7; /* Konqueror 3.1, Safari 1.1 */
+	opacity: 0.7; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+}
+
+.my-modal{
+    visibility : hidden;
+}
+
+label.for-form {
+  float : left;
+  width : 250px; 
+  text-align : right;
+  padding-right: 10px;
+  font-weight: bold;
+  cursor : default;
+  background-color: #EEEEEE;
+}
+
+span.disabled {
+  color : gray;
+  font-weight : bold;
+}
+
+div.underline{
+  border-bottom : solid 1px #DDDDDD; 
+  margin-bottom : 10px;
+}
+
+div.absolute{
+  position : absolute; 
+}
+
+div.clearfix{
+	margin-top : 2px;
+	margin-bottom : 2px;
+}
+
+div.clearfix span{
+	margin-left : 20px;
+}
+
+div.clearfix label.for-form span.required{
+	margin-left : 5px;
+	color: red;
+	font-family: courier new;
+}
+
+div.clearfix input, div.clearfix textarea, div.clearfix select{
+	border: solid 1px #CCCCCC;
+	margin-left: 10px;
+}
+
+h1 {
+  background-color : #EEEEEE;
+}
+
+table tr td.pointed, table tr td i.pointed{
+	cursor: pointer;
+}
+
+table.commonTable {
+	border : 1px solid  #EEEEEE;
+	padding-top : 15px;
+	width : 100%;
+	border-bottom : 1px solid #EEEEEE;
+	margin-bottom : 15px;
+}
+
+table.commonTable i:hover{
+	cursor: pointer;
+}
+
+div.validate-error, label.validate-error{
+	background-color: #FFCC99;
+}
+
+div.validate-error{
+	color : #990000;
+}
+
+input.validate-error{
+	background-color: #FFCC99;
+}
+
+table.commonTable thead {
+	font-weight: bold;
+	font-size : 14px;
+}
+
+table.commonTable thead tr td.for-icon , table.commonTable tbody tr td.for-icon {
+	width : 10px;
+}
+
+table.commonTable thead tr td.for-icon i, table.commonTable tbody tr td.for-icon i {
+	display :table-cell;
+	padding-left: 10px;
+}
+
+table.commonTable tbody {
+	font-size : 12px;
+}
+
+
+table.commonTable tbody tr.data-mode-R:hover {
+	cursor : pointer;
+	background-color: #EEEEEE;
+}
+
+table.commonTable tbody tr.data-mode-M:hover {
+	cursor : pointer;
+}
+
+/*
+table.commonTable tbody tr td.for-showing:hover {
+	cursor : pointer;
+}
+*/
+
+table.commonTable tbody tr th {
+	font-style : italic;
+	font-weight: normal;
+	text-align: left;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+	color: #BBBBBB;
+}
+
+table.commonTable tbody tr: {
+	font-style : italic;
+}
+
+table.commonTable tr.rec-added {
+	background-color: #CCFFCC;
+}
+
+table.commonTable tr.rec-removed {
+	background-color: #FFCC99;
+}
+
+i.icon-for-header{
+	margin-bottom : 5px;
+	margin-left : 40px;
+	cursor : pointer;
+}
+
+
+ul.pagination li a.doted{
+	/*
+	border : none;
+	 */
+	 background-color: transparent;
+	cursor : default;
+}
+
+tr.paginator td span, tr.paginator td ul{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+tr.paginator td span.counter{
+	padding-right: 150px;
+}
+
+span.undefined {
+	color: #BBBBBB;
+	font-style: italic;
+	font-size: 12px;
+}
+
+ul.pagination li{
+	cursor : pointer;
+}
+
+table.table-main-customize tbody tr td{
+	border-left: solid 1px #EEEEEE;
+	padding-top : 3px;
+	padding-bottom : 3px;
+}
+
+h4.modal-title i{
+	float: right;
+	cursor:pointer;
+}
+
+h4.modal-title span.mes-create{
+	float:right;
+	color: #660000;
+	background-color: #F2DEDE;
+	padding: 5px 50px 5px 50px;
+	font-weight: bold; 
+}
+
+h4.modal-title span.mes-update{
+	float:right;
+	color: #660000;
+	background-color: #F2DEDE;
+	padding: 5px 50px 5px 50px;
+	font-weight: bold; 
+}
+
+
+
+

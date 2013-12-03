@@ -1,0 +1,32 @@
+[
+  {
+    "id" : 200,
+    "name" : "Dial-Up (модем 56k)",
+    "code":"dial_up",
+    "level": 1
+  },
+  {
+    "id" : 201,
+    "name" : "ADSL-канал",
+    "code":"adsl",
+    "level": 2
+  },
+  {
+    "id" : 202,
+    "name" : "ADSL2+ канал",
+    "code":"adsl2",
+    "level": 3
+  },
+  {
+    "id" : 203,
+    "name" : "Ethernet-100M",
+    "code":"ethernet100m",
+    "level": 4
+  },
+  {
+    "id" : 204,
+    "name" : "ethernet-1G",
+    "code":"ethernet1g",
+    "level": 5
+  }
+]

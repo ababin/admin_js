@@ -1,0 +1,23 @@
+[
+  {
+    "id" : 1,
+    "i18nName" : {"ru_RU":"Новости","en_EN":"News"},
+    "i18nDesc" : {"ru_RU":"новости описание","en_EN":"news description"},
+    "sortOrder" : 5,
+    "categoryType" : "btv"
+  },
+  {
+    "id" : 2,
+    "i18nName" : {"ru_RU":"Развлечения","en_EN":"qqq"},
+    "i18nDesc" : {"ru_RU":"развлечения описание","en_EN":"qqq description"},
+    "sortOrder" : 4,
+    "categoryType" : "btv"
+  },
+  {
+    "id" : 3,
+    "i18nName" : {"ru_RU":"История","en_EN":"History"},
+    "i18nDesc" : {"ru_RU":"история описание","en_EN":"history description"},
+    "sortOrder" : 3,
+    "categoryType" : "btv"
+  }
+]

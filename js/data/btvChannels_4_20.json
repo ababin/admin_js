@@ -1,0 +1,95 @@
+{
+  "totalCount" : 137,
+  "page" : 4,
+  "pageSize" : 20,
+  "data" :
+  [
+  {
+    "id" : 1,
+    "i18nName" : {"ru_RU":"БТВ-канал 1 1111111111","en_EN":"Btv channel 1"},
+    "i18nDesc" : {"ru_RU":"БТВ-канал описание 1","en_EN":"Btv channel description 1"},
+    "status" : "ACTIVE",
+    "ageRating" : 301,
+    "genres" : [12,15,17],
+    "primaryPortNumber":5500,
+    "primaryAddress":"172.20.5.5",
+    "primaryProtocol":"igmp",
+    "sortOrder" : 10,
+    "barkerPosition" : 1,
+    "doScreenshots" : true,
+    "format":"unknownformat",
+    "channelUrl" : "http://www.ort.ru",
+    "regions":[10,11],
+    "mediaSources": {"100" :	{"id":100,"c":"MediaAsset","protocol":"http","application":"alvideo.ru/morevideo","fileName":"korol_lev.m3u"},
+     				 "101" :	{"id":101,"c":"MediaAsset","protocol":"http","application":"alvideo.ru/morevideo","fileName":"korol_lev_2.m3u"}
+    				}
+  },
+  {
+    "id" : 2,
+    "i18nName" : {"ru_RU":"БТВ-канал 2 2222222222222","en_EN":"Btv channel 2"},
+    "i18nDesc" : {"ru_RU":"БТВ-канал описание 2","en_EN":"Btv channel description 2"},
+    "status" : "ACTIVE",
+    "ageRating" : 1,
+    "primaryPortNumber":5500,
+    "primaryAddress":"172.20.5.5",
+    "primaryProtocol":"igmp"
+  },
+  {
+    "id" : 3,
+    "i18nName" : {"ru_RU":"БТВ-канал 3","en_EN":"Btv channel 3"},
+    "i18nDesc" : {"ru_RU":"БТВ-канал описание 3","en_EN":"Btv channel description 3"},
+    "status" : "ACTIVE",
+    "primaryPortNumber":5500,
+    "primaryAddress":"172.20.5.5",
+    "primaryProtocol":"igmp"
+  },
+  {
+    "id" : 4,
+    "i18nName" : {"ru_RU":"БТВ-канал 4","en_EN":"Btv channel 4"},
+    "i18nDesc" : {"ru_RU":"БТВ-канал описание 4","en_EN":"Btv channel description 4"},
+    "status" : "ACTIVE",
+    "primaryPortNumber":5500,
+    "primaryAddress":"172.20.5.5",
+    "primaryProtocol":"igmp"
+  },
+  {
+    "id" : 5,
+    "i18nName" : {"ru_RU":"БТВ-канал 5","en_EN":"Btv channel 5"},
+    "i18nDesc" : {"ru_RU":"БТВ-канал описание 5","en_EN":"Btv channel description 5"},
+    "status" : "INACTIVE",
+    "primaryPortNumber":5500,
+    "primaryAddress":"172.20.5.5",
+    "primaryProtocol":"igmp"
+  },
+  {
+    "id" : 6,
+    "i18nName" : {"ru_RU":"БТВ-канал 6","en_EN":"Btv channel 6"},
+    "i18nDesc" : {"ru_RU":"БТВ-канал описание 6","en_EN":"Btv channel description 6"},
+    "status" : "INACTIVE",
+    "primaryPortNumber":5500,
+    "primaryAddress":"172.20.5.5",
+    "primaryProtocol":"igmp"
+  },
+  {
+    "id" : 7,
+    "i18nName" : {"ru_RU":"БТВ-канал 7","en_EN":"Btv channel 7"},
+    "i18nDesc" : {"ru_RU":"БТВ-канал описание 7","en_EN":"Btv channel description 7"},
+    "status" : "INACTIVE",
+    "primaryPortNumber":5500,
+    "primaryAddress":"172.20.5.5",
+    "primaryProtocol":"igmp"
+  },
+  {
+    "id" : 8,
+    "i18nName" : {"ru_RU":"БТВ-канал 8","en_EN":"Btv channel 8"},
+    "i18nDesc" : {"ru_RU":"БТВ-канал описание 8","en_EN":"Btv channel description 8"},
+    "status" : "INACTIVE",
+    "primaryPortNumber":5500,
+    "primaryAddress":"172.20.5.5",
+    "primaryProtocol":"igmp"
+  }
+  ] 
+}
+
+
+

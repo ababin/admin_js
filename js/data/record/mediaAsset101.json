@@ -1,0 +1,16 @@
+{
+    "id" : 101,
+    "c" : "MediaAsset",
+    "protocol":"http",
+    "application": "alvideo.ru/morevideo",
+    "fileName" : "korol_lev__________.m3u",
+    "encryption":"NONE",
+    "copyProtection":false,
+    "encoding":"MPEG2",
+    "bitrate":2500,
+    "volume":80,
+    "bandwidthRating":202,
+    "resolution":"SD",
+    "fileSize":65000,
+    "duration":850
+}
