@@ -1,4 +1,4 @@
-if(Admin == undefined){Admin = {};}
+if(typeof Admin == 'undefined'){Admin = {};}
 
 
 Admin.ViewController = function(){
@@ -10,15 +10,19 @@ Admin.ViewController = function(){
 	this.windows = new Array();
 };
 
+Admin.ViewController.prototype.getTopWindow = function(){
+	return this.windows[this.windows.length-1];
+};
+
+Admin.ViewController.prototype.removeTopWindow = function(){
+	this.windows.splice(this.windows.length-1, 1);
+};
+
+
 /* ========================================================================================================================================== */
 Admin.ViewController.prototype.closeWindow = function(){
-	// соответствующее окно
-	var dw = this.windows[this.windows.length-1];
-	// 1. close window
-	dw.close();
-	// 2. remove window from array
-	this.windows.splice(this.windows.length-1, 1);
-	// 3. show or not gray wall
+	this.getTopWindow().close();
+	this.removeTopWindow();
 	this.wall();
 };
 
@@ -28,7 +32,7 @@ Admin.ViewController.prototype.wall = function(){
 		$('#wall').hide();
 		return;
 	}
-	var win = this.windows[this.windows.length-1];
+	var win = this.getTopWindow();
 		
 	$('#wall').css("z-index", win.zIndex - 1);
 	$('#wall').show();
