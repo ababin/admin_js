@@ -1,9 +1,10 @@
 var model = {};
 
+
 model.URLS = {
 	
 	BtvChannel : {
-		table : '/abc/restful/btvChannel/listdata/{page},{pageSize}',  //'data/btvChannels_{page}_{pageSize}.json',
+		table : '/app-facade/restful/btvChannel/listdata/{page},{pageSize}',  //'data/btvChannels_{page}_{pageSize}.json',
 		record : 'data/record/btvChannel.json',
 		persist : 'abc/restful/btvChannel',
 	},
@@ -18,25 +19,25 @@ model.URLS = {
 	},
 
 	AgeRating : {
-		table : '/abc/restful/ageRating/listdata/{page},{pageSize}',
+		table : '/app-facade/restful/ageRating/listdata/{page},{pageSize}',
 		record : 'data/record/ageRating1.json'
 
 	},
 
 	Genre : {
-		table : '/abc/restful/genre/btv/listdata/{page},{pageSize}',
+		table : '/app-facade/restful/genre/btv/listdata/{page},{pageSize}',
 		record : 'data/record/genre1.json'
 
 	},
 	
 	BtvGenre : {
-		table : '/abc/restful/genre/btv/listdata/{page},{pageSize}',
+		table : '/app-facade/restful/genre/btv/listdata/{page},{pageSize}',
 		record : 'data/record/genre1.json'
 
 	},
 
 	Region : {
-		table : '/abc/restful/region/listdata/{page},{pageSize}',
+		table : '/app-facade/restful/region/listdata/{page},{pageSize}',
 		record : 'data/record/region1.json'
 
 	},
@@ -53,8 +54,8 @@ if (model.CLASSES == undefined) {
 /* ***************************************************************************************************************************************** */
 /* **** BtvChannel ************************************************************************************************************************* */
 
-model.CLASSES.BtvChannel = {
-	fields : {
+model.CLASSES.BtvChannel = {};
+model.CLASSES.BtvChannel.fields = {
 		id : {type : "t:Identifier"	},
 		i18nName : {type : "t:I18nString",maxSize : 255,isNullable : false},
 		i18nDesc : {type : "t:I18nArea",maxSize : 3800},
@@ -135,13 +136,13 @@ model.CLASSES.BtvChannel = {
 		primaryPortNumber : {
 			type : "t:Integer"
 		},
-	},
+};
 
-	params : {
+model.CLASSES.BtvChannel.params = {
 		pagedLoading : true
-	},
+};
 
-	table : {
+model.CLASSES.BtvChannel.table = {
 		fields : [
 		        "i18nName",
 				"id",
@@ -157,14 +158,15 @@ model.CLASSES.BtvChannel = {
 				},
 				"sortOrder"],
 		columnSizes : {id : '50px', i18nName : '250px', status : '50px', sortOrder : '100px', doScreenshots : '100px'},
-	},
-	record : {
+	};
+
+model.CLASSES.BtvChannel.record = {
 		fields : [ "id", "i18nName", "i18nDesc", "status", "ageRating",
 				"sortOrder", "barkerPosition", "doScreenshots", "format",
 				"channelUrl", "primaryAddress", "primaryProtocol",
 				"primaryPortNumber", "genres", "mediaSources", "regions" ],
-	}
-};
+	};
+
 
 model.CLASSES.BtvGenre = {
 		fields : { 
@@ -386,11 +388,9 @@ model.CLASSES.MediaAsset = {
 
 model.ENUMS = {
 	LifeCycleState : [ "ACTIVE", "INACTIVE" ],
-	EncryptionType : [ "NONE", "VERIMATRIX", "WIDEVINE", "SECUREMEDIA",
-			"VIACCESS" ],
+	EncryptionType : [ "NONE", "VERIMATRIX", "WIDEVINE", "SECUREMEDIA", "VIACCESS" ],
 	MediaEncodingType : [ "MP3", "MPEG2", "MPEG4", "MPEG4_AC3" ],
 	ResolutionType : [ "SD", "HD", "FULL_HD" ],
-
 };
 
 model.PERMS = {
