@@ -66,7 +66,7 @@ Admin.ControllerManager = function(){
 // BASE CONTROLLER =================================================================================================
 function BaseController(_class){
     
-	/* Класс представляеемых объектов, например BtvChannel, Videoserver ... */
+	/* Класс представляемых объектов, например BtvChannel, Videoserver ... */
     this.entityClass = _class;
         
     /* имя контроллера */
@@ -75,7 +75,7 @@ function BaseController(_class){
     /* URL-ы для загрузки данных */
     this.urls = model.URLS[this.entityClass];
     
-    /* параметры таблицы страницы начинаются с единицы !!! */
+    /* параметры таблицы. Cтраницы начинаются с единицы !!! */
     this.tableParams = {totalCount:0,pageSize:10,page:1};
     
     /* private fields ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -102,7 +102,7 @@ function BaseController(_class){
     	
     	if(data == null || _pageSize != this.tableParams.pageSize || _page != this.tableParams.page){
     		if(this.urls == undefined || this.urls == false){
-    			alert("Url загрузки данных для " + this.entityClass + " не задан!");
+    			alert("URL загрузки данных для " + this.entityClass + " не задан!");
     			return null;
     		}
     		// prepareUrl:

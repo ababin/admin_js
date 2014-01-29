@@ -3,13 +3,13 @@
 mvn clean install
 
 # stop jetty
-/opt/jetty/bin/jetty.sh stop
+/opt/jetty_js/bin/jetty.sh stop
 
 # clear log folder
-rm -R /opt/jetty/logs/**
+rm -R /opt/jetty_js/logs/**
 
 # copy application
-cp /home/alexander/projects/prospring3/ch16/target/abc.war /opt/jetty/webapps/abc.war
+cp /home/alexander/projects/admin_js/facade-rest/target/abc.war /opt/jetty/webapps/abc.war
 
 # start jetty
 /opt/jetty/bin/jetty.sh start
