@@ -6,6 +6,8 @@ import ru.cti.tve.rest.BaseTest;
 
 public class AgeRatingServiceTest extends BaseTest{
 	
+	/*
+	
 	@Autowired("ageRatingService")
 	private EntityService<>
 	
@@ -24,5 +26,5 @@ public class AgeRatingServiceTest extends BaseTest{
 		
 	}
 
-	
+	*/
 }

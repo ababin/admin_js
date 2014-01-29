@@ -19,10 +19,10 @@
 	<bean id="jpaAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
 		
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource">
-        <property name="driverClassName" value="${jdbc.iptvmw.driverClassName}"/>
-        <property name="url" value="${jdbc.iptvmw.url}"/>
-        <property name="username" value="${jdbc.iptvmw.username}"/>
-        <property name="password" value="${jdbc.iptvmw.password}"/>
+        <property name="driverClassName" value="${jdbc.db.driverClassName}"/>
+        <property name="url" value="${jdbc.db.url}"/>
+        <property name="username" value="${jdbc.db.username}"/>
+        <property name="password" value="${jdbc.db.password}"/>
         <property name="autoCommit" value="false"/>
         <property name="suppressClose" value="true"/>
     </bean>

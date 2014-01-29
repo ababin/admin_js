@@ -8,18 +8,10 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-
 import ru.cti.oss.iptv.common.Category;
-import ru.cti.tve.rest.serviceutil.Configurator;
 
 public abstract class Transformer<T>{
-	
-	@Autowired
-	@Qualifier("configurator")
-	protected Configurator config;
-	
+			
 	public abstract Map<String,Object> toExternal(T domain);
 	public abstract Object toExternalId(T domain);
 	public abstract T toInternal(Map <String,Object> map);
@@ -73,7 +65,7 @@ public abstract class Transformer<T>{
 	}
 	
 	protected String getValueForDefaultLocale(Map<String, Object> map){
-		String localeString = config.getDefaultLocaleString();
+		String localeString = "ru_RU";
 		if(map != null && map.get(localeString)!=null){
 			return String.valueOf(map.get(localeString));
 		}

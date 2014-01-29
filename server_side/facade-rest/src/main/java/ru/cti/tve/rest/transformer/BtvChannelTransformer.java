@@ -16,7 +16,7 @@ public class BtvChannelTransformer extends Transformer<BtvChannel> {
 	
 	public Map<String,Object> toExternal(BtvChannel domain){
 		Map <String,Object> map = new HashMap<String , Object>();
-		map.put("id", toExternal(domain));
+		map.put("id", toExternalId(domain));
 		map.put("barkerPosition",domain.getBarkerPosition());
 		map.put("categories",toExternalCategories(domain));
 		map.put("channelUrl",domain.getChannelUrl());

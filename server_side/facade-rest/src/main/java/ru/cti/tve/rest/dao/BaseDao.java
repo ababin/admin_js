@@ -57,7 +57,7 @@ public abstract class BaseDao<T> implements Dao<T> {
 	@Override
 	@Transactional
 	public int getCount(){
-		return Integer.valueOf(emanager.createQuery("SELECT count(e) FROM " + clazz.getSimpleName()).getSingleResult().toString());
+		return Integer.valueOf(emanager.createQuery("SELECT count(e) FROM " + clazz.getSimpleName() + " e").getSingleResult().toString());
 	}
 	
 }

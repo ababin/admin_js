@@ -24,7 +24,9 @@ public class AgeRatingDaoTest extends BaseTest{
 	@Autowired
 	@Qualifier("ageRatingDao")
 	private Dao<Rating> dao;
-				
+	
+	/*
+	
 	@Test
 	public void test_toExternal(){
 		dao.find(id);
@@ -150,6 +152,6 @@ public class AgeRatingDaoTest extends BaseTest{
 		res.setName("name");
 		return res;
 	}
-	
+	*/
 	
 }
