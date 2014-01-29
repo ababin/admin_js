@@ -4,7 +4,7 @@ var model = {};
 model.URLS = {
 	
 	BtvChannel : {
-		table : '/app-facade/restful/btvChannel/listdata/{page},{pageSize}',  //'data/btvChannels_{page}_{pageSize}.json',
+		table : '/facade-rest/restful/btvChannel/listdata/{page},{pageSize}',  //'data/btvChannels_{page}_{pageSize}.json',
 		record : 'data/record/btvChannel.json',
 		persist : 'abc/restful/btvChannel',
 	},
@@ -19,25 +19,25 @@ model.URLS = {
 	},
 
 	AgeRating : {
-		table : '/app-facade/restful/ageRating/listdata/{page},{pageSize}',
+		table : '/facade-rest/restful/ageRating/listdata/{page},{pageSize}',
 		record : 'data/record/ageRating1.json'
 
 	},
 
 	Genre : {
-		table : '/app-facade/restful/genre/btv/listdata/{page},{pageSize}',
+		table : '/facade-rest/restful/genre/btv/listdata/{page},{pageSize}',
 		record : 'data/record/genre1.json'
 
 	},
 	
 	BtvGenre : {
-		table : '/app-facade/restful/genre/btv/listdata/{page},{pageSize}',
+		table : '/facade-rest/restful/genre/btv/listdata/{page},{pageSize}',
 		record : 'data/record/genre1.json'
 
 	},
 
 	Region : {
-		table : '/app-facade/restful/region/listdata/{page},{pageSize}',
+		table : '/facade-rest/restful/region/listdata/{page},{pageSize}',
 		record : 'data/record/region1.json'
 
 	},
