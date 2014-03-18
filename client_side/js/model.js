@@ -44,7 +44,7 @@ model.URLS = {
 
 };
 
-if (model.CLASSES == undefined) {
+if (typeof model.CLASSES == 'undefined') {
 	model.CLASSES = {};
 };
 
@@ -56,36 +56,36 @@ if (model.CLASSES == undefined) {
 
 model.CLASSES.BtvChannel = {};
 model.CLASSES.BtvChannel.fields = {
-		id : {type : "t:Identifier"	},
+		id       : {type : "t:Identifier"	},
 		i18nName : {type : "t:I18nString",maxSize : 255,isNullable : false},
 		i18nDesc : {type : "t:I18nArea",maxSize : 3800},
-		status : {	type : "e:LifeCycleState",	isNullable : false,	defaultValue : "INACTIVE"},
+		status   : {type : "e:LifeCycleState",	isNullable : false,	defaultValue : "INACTIVE"},
 		genres : {
-			type : "BtvGenre", /* тип данных, который описвает это поле */
-			multitude : "list", /*
-								 * множественность. Пока только либо set, либо list, либо
-								 * нет ничего. set - определяет, что поле
-								 * представлено в виде набора сущностей
-								 * указанного типа, list соответсвует массиву (Array)
-								 */
-			isIdentifier : true, /*
-									 * данные представлены в виде списка
-									 * идентификаторов
+				type          : "BtvGenre", /* тип данных, который описвает это поле */
+				multitude     : "list", /*
+									 * множественность. Пока только либо set, либо list, либо
+									 * нет ничего. set - определяет, что поле
+									 * представлено в виде набора сущностей
+									 * указанного типа, list соответсвует массиву (Array)
 									 */
-			pageable : false, /*
-								 * нужно ли использовать пейджинацию при
-								 * отображении этих данных
-								 */
-			isComposition : false, /*
-									 * создается ли сущность отдельно, либо
-									 * подтягивается из справочника
+				isIdentifier  : true, /*
+										 * данные представлены в виде списка
+										 * идентификаторов
+										 */
+				pageable      : false, /*
+									 * нужно ли использовать пейджинацию при
+									 * отображении этих данных
 									 */
-			isDetached : false, /*
-								 * являются ли записи detached. То есть нужно ли
-								 * их подгружать или брать данные из самой
-								 * записи
-								 */
-			rel : "manyToMany"
+				isComposition : false, /*
+										 * создается ли сущность отдельно, либо
+										 * подтягивается из справочника
+										 */
+				isDetached    : false, /*
+									 * являются ли записи detached. То есть нужно ли
+									 * их подгружать или брать данные из самой
+									 * записи
+									 */
+				rel           : "manyToMany"
 		},
 		mediaSources : {
 			type : "MulticastChannel,MediaAsset",

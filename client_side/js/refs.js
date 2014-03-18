@@ -13,8 +13,8 @@ ref.MSGS = {
   "Boolean.false" : "Нет",
   "reference" : "Справочник",
 	  
-  'error.requiredError' : 'Поле не заполнено',
-  'error.notIntegerError' : 'Значение поля должно быть целым числом'
+  "error.requiredError" : "Поле не заполнено",
+  "error.notIntegerError" : "Значение поля должно быть целым числом"
 	  
 };
 
@@ -106,7 +106,7 @@ ref.MSGS_MODEL = {
   
 };
 
-ref.LOCALES = ['ru_RU','en_EN'];
+ref.LOCALES = ["ru_RU","en_EN"];
 
 
 
